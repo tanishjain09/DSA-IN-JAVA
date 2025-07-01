@@ -1,10 +1,9 @@
-package onlinePlatformProblems;
+package algorithms.searching.binary;
 //Question -> Leetcode 34
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Problem4 {
+public class FirstAndLastOcurrence {
     public static void main(String[] args) {
         int[] nums = {5, 7, 7, 7, 7, 8, 8, 10};
         System.out.println(Arrays.toString(solution(nums,10)));

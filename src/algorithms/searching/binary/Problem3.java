@@ -1,4 +1,4 @@
-package onlinePlatformProblems;
+package algorithms.searching.binary;
 //Question -> leetcode 744
 
 public class Problem3 {
