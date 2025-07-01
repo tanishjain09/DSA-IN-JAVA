@@ -1,7 +1,7 @@
 package algorithms.searching.binary;
 //Question -> Leetcode 1095
 //searching in mountain array
-public class SearchInMountainArray {
+public class SearchInMountainArrayLeetcode {
     public static void main(String[] args) {
         int arr[] = {1, 2, 2, 4, 5, 3, 1};
         System.out.println(searchInMountainArray(arr,3));

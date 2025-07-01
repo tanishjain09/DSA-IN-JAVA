@@ -7,9 +7,9 @@ import java.util.List;
 
 public class LeaderInArray {
     public static void main(String[] args) {
-        int[] arr = { 16, 17, 4, 3, 5, 2 };
-//        ArrayList<Integer> list = LeaderInArrayBrute(arr);
-        ArrayList<Integer> result = LeaderInArrayOptimal(arr);
+        int[] arr = { 17,16 , 4, 3, 5, 2 };
+        ArrayList<Integer> result = LeaderInArrayBrute(arr);
+//        ArrayList<Integer> result = LeaderInArrayOptimal(arr);
         System.out.println(result);
 
     }

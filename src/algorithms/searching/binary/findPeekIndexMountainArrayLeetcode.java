@@ -1,7 +1,7 @@
 package algorithms.searching.binary;
 //Question -> Leetcode 852
 //find peek in mountain array
-public class findPeekIndexMountainArray {
+public class findPeekIndexMountainArrayLeetcode {
     public static void main(String[] args) {
         int[] arr = {-13, -11, 0, 12, 1414, 11313, 1990, 12, 0, -12012};
         int index = peakIndexMountainArray(arr);

@@ -3,10 +3,10 @@ package algorithms.searching.binary;
 
 import java.util.Arrays;
 
-public class FirstAndLastOcurrence {
+public class FirstAndLastOcurrenceLeetcode {
     public static void main(String[] args) {
         int[] nums = {5, 7, 7, 7, 7, 8, 8, 10};
-        System.out.println(Arrays.toString(solution(nums,10)));
+        System.out.println(Arrays.toString(solution(nums,8)));
     }
 
     static int[] solution(int[] nums, int target){

@@ -1,6 +1,6 @@
 package algorithms.searching.binary;
 
-public class InfiniteArray {
+public class InfiniteArrayGoG {
     public static void main(String[] args) {
         //infinite array mean we cant use .length in sorted array to find
         int[] arr = {3, 5, 7, 9 ,90, 100, 130, 140, 160, 170};
