@@ -10,16 +10,16 @@ public class BinarySearch{
         System.out.println(binarySearchDescending(arr2,target2));
     }
     // return the index,return -1 if it doest not exits
-    static int binarySearchAscending(int[] arr, int targe){
+    static int binarySearchAscending(int[] arr, int target){
         int start = 0;
         int end = arr.length - 1;
 
         while (start <= end){
             //find middle element
             int mid = start + (end - start)/2;
-            if(targe < arr[mid]){
+            if(target < arr[mid]){
                 end = mid - 1;
-            } else if (targe > arr[mid]) {
+            } else if (target > arr[mid]) {
                 start = mid + 1;
             }else{
                 return mid;
