@@ -1,7 +1,7 @@
 package algorithms.searching.binary;
 //Question -> leetcode 744
 
-public class Problem3 {
+public class Problem3LeetCode {
     public static void main(String[] args) {
         char[] letter = {'c', 'f', 'j'};
         System.out.println(solution(letter,'a'));

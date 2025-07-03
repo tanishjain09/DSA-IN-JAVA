@@ -3,7 +3,7 @@ package algorithms.searching.linear;
 //If the second largest element does not exist, return -1.
 
 //first approach is to sort the array and and get second largest in array other approaches are:
-public class SecondLargestInArray {
+public class SecondLargestInArrayGoG {
     public static void main(String[] args) {
         int[] arr = {12, 35, 1, 10, 34, 1};
         System.out.println(getSecondLargest1(arr));

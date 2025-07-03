@@ -1,7 +1,7 @@
 package algorithms.searching.linear;
 //Question 1 -> Leetcode 1295
 //https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/
-public class NumbersWithEvenNoOfDigit {
+public class NumbersWithEvenNoOfDigitLeetcode {
     public static void main(String[] args) {
         int[] arr = {12,345,2,6,7896,1589};
         System.out.println(solution(arr));

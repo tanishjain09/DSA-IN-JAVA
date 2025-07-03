@@ -2,7 +2,7 @@ package algorithms.searching.linear;
 
 //Leetcode 1672
 //https://leetcode.com/problems/richest-customer-wealth/description/
-public class RichestCustomerWealth {
+public class RichestCustomerWealthLeetCode {
     public static void main(String[] args) {
         int[][] accounts = {
                 {1,2,3},

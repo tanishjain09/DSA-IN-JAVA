@@ -4,7 +4,7 @@ package algorithms.searching.linear;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LargestThreeElement {
+public class LargestThreeElementGoG {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,14,9101,1,131,133};
         List<Integer> res = getLargestThree(arr);
