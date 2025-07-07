@@ -9,7 +9,7 @@ public class SearchInSortedMatrix {
                 {4, 5, 6},
                 {7, 8, 9}
         };
-        System.out.println(Arrays.toString(search(arr,16)));
+        System.out.println(Arrays.toString(search(arr,9)));
     }
 
 
