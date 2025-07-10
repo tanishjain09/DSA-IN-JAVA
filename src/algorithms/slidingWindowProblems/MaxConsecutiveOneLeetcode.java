@@ -1,4 +1,4 @@
-package algorithms.searching.linear;
+package algorithms.slidingWindowProblems;
 //Question -> 485Leetcode
 //https://leetcode.com/problems/max-consecutive-ones/description/
 public class MaxConsecutiveOneLeetcode {
