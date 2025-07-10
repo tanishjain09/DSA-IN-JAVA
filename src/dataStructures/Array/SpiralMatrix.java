@@ -1,6 +1,6 @@
 package dataStructures.Array;
 
-public class SpriralMatrix {
+public class SpiralMatrix {
     public static void main(String[] args) {
         int[][] matrix = {
                 {1, 2, 3, 4},
