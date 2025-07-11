@@ -1,4 +1,4 @@
-package algorithms.recursion;
+package algorithms.recursion.string;
 
 public class SkipString {
     public static void main(String[] args) {

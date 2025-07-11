@@ -1,4 +1,4 @@
-package algorithms.recursion;
+package algorithms.recursion.string;
 //skip 'a' from the string
 public class SkipChar {
     public static void main(String[] args) {
