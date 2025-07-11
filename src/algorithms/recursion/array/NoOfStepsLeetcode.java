@@ -1,4 +1,4 @@
-package algorithms.recursion;
+package algorithms.recursion.array;
 
 public class NoOfStepsLeetcode {
     public static void main(String[] args) {

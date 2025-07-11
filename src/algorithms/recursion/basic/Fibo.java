@@ -1,4 +1,4 @@
-package algorithms.recursion;
+package algorithms.recursion.basic;
 
 public class Fibo {
     public static void main(String[] args) {
