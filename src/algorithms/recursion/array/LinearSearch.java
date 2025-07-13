@@ -6,17 +6,17 @@ import java.util.List;
 public class LinearSearch {
     public static void main(String[] args) {
         int[] arr = {2, 3, 1, 4, 4,5};
-        System.out.println(find(arr, 4, 0));
-        System.out.println(findIndex(arr,4,0));
-        System.out.println(findIndexLast(arr, 4, arr.length-1));
-        System.out.println(findAllIndex(arr, 4, 0, new ArrayList<>()));
+        System.out.println(find(arr, 5, 0));
+//        System.out.println(findIndex(arr,4,0));
+//        System.out.println(findIndexLast(arr, 4, arr.length-1));
+//        System.out.println(findAllIndex(arr, 4, 0, new ArrayList<>()));
         System.out.println(findAllIndex2(arr, 4, 0));
 
     }
 
 
     static boolean find(int[] arr, int target, int index){
-        if(index == arr.length - 1){
+        if(index == arr.length){
             return false;
         }
         return arr[index] == target || find(arr, target, index + 1);
