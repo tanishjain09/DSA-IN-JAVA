@@ -20,7 +20,7 @@ public class UnionOfArrayA2Z {
         int j = 0;
 
         while (i<n && j<m){
-            if(arr1[i] <= arr1[j]){
+            if(arr1[i] <= arr2[j]){
                 if(union.size() == 0 || union.get(union.size() - 1) != arr1[i]) {
                     union.add(arr1[i]);
                 }
@@ -33,7 +33,7 @@ public class UnionOfArrayA2Z {
         }
 
         while (i<n){
-            if(arr1[i] <= arr1[j]){
+            if(arr1[i] <= arr2[j]){
                 if(union.size() == 0 || union.get(union.size() - 1) != arr1[i]) {
                     union.add(arr1[i]);
                 }
