@@ -1,13 +1,16 @@
 package algorithms.recursion.string;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Permutations {
     public static void main(String[] args) {
-        permutations("","abc");
-        ArrayList<String> ans = permutationsList("","abcd");
+//        permutations("","abc");
+        ArrayList<String> ans = permutationsList("","123");
         System.out.println(ans);
-        System.out.println(permutationsCount("","abcd"));
+//        System.out.println(permutationsCount("","abcd"));
+        Collections.sort(ans);
+        System.out.println(ans.get(0));
     }
 
     static void permutations(String p, String up){
