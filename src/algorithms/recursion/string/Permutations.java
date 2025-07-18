@@ -6,7 +6,7 @@ import java.util.Collections;
 public class Permutations {
     public static void main(String[] args) {
 //        permutations("","abc");
-        ArrayList<String> ans = permutationsList("","123");
+        ArrayList<String>ans = permutationsList("","123");
         System.out.println(ans);
 //        System.out.println(permutationsCount("","abcd"));
         Collections.sort(ans);
