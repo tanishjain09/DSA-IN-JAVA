@@ -6,12 +6,14 @@ public class FlipImage {
 
         for(int[] row: image){
             //reverse this array
-            for(int i = 0; i < image[0].length - 1; i++){
-                //swap and xor each element
-
-                int temp = row[i] ^ 1;
-                row[i] = row[image[0].length - i - 1] ^ 1;
-                row[image[0].length - i - 1] = temp;
+            int start = 0;
+            int end = image[0].length - 1;
+            while (start<=end){
+                int temp = row[start] ^ 1;
+                row[start] = row[end] ^1;
+                row[end] = temp;
+                start++;
+                end--;
             }
         }
 
