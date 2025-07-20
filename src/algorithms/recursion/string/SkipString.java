@@ -2,6 +2,7 @@ package algorithms.recursion.string;
 
 public class SkipString {
     public static void main(String[] args) {
+
         System.out.println(skipApple("bacapplecdah"));
     }
     static String skipApple(String up){

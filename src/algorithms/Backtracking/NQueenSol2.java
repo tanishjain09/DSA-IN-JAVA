@@ -35,7 +35,7 @@ public class NQueenSol2 {
     }
 
     private static boolean isSafe(char[][] board, int row, int col) {
-        int duprow = row;
+             int duprow = row;
         int dupcol = col;
 
         while (row >= 0 && col >= 0){

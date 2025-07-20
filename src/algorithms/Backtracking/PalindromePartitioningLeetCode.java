@@ -5,10 +5,10 @@ import java.util.List;
 
 public class PalindromePartitioningLeetCode {
     public static void main(String[] args) {
-
+        System.out.println(partition("aab"));
     }
 
-    public List<List<String>> partition(String s) {
+    public static List<List<String>> partition(String s) {
         List<List<String>> ans = new ArrayList<>();
         palindromepartitioning(s,0,ans,new ArrayList<>());
         return ans;
@@ -23,7 +23,7 @@ public class PalindromePartitioningLeetCode {
         for(int i = index; i < s.length(); i++){
             if(isPlaindrome(s, index, i)){
                 list.add(s.substring(index, i+1));
-                palindromepartitioning(s, index +1,ans, list);
+                palindromepartitioning(s, i +1,ans, list);
                 list.remove(list.size() - 1);
             }
         }

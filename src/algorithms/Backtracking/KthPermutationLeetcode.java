@@ -1,11 +1,11 @@
-package dataStructures.Array;
+package algorithms.Backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class KthPermutationLeetcode {
     public static void main(String[] args) {
-        String str=  getPermutation(3,3);
+        String str=  getPermutation(4,19);
         System.out.println(str);
     }
     public static String getPermutation(int n, int k) {
