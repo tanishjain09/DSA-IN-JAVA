@@ -12,7 +12,7 @@ public class InfiniteArrayGoG {
         //first find the range
         //start with the box of size 2 in the array
         int start = 0;
-        int end = 2;
+        int end = 1;
 
         //condition for the target to lie in the range
         if( target > arr[end]){
