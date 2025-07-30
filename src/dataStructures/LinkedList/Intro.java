@@ -22,14 +22,28 @@ public class Intro {
 //        System.out.println(list.delete(6));
 //        list.display();
 
-        DoublyLL dll = new DoublyLL();
-        dll.insertAtFirst(3);
-        dll.insertAtFirst(2);
-        dll.insertAtFirst(8);
-        dll.insertAtFirst(17);
-        dll.insertAtLast(99);
-        dll.insertAfter(8,65);
-        dll.display();
+//        DoublyLL dll = new DoublyLL();
+//        dll.insertAtFirst(3);
+//        dll.insertAtFirst(2);
+//        dll.insertAtFirst(8);
+//        dll.insertAtFirst(17);
+//        dll.insertAtLast(99);
+//        dll.insertAfter(8,65);
+//        dll.display();
+
+        CircularLL cll = new CircularLL();
+
+        cll.insert(1);
+        cll.insert(2);
+        cll.insert(3);
+        cll.insert(4);
+        cll.insert(5);
+
+        cll.display();
+
+        cll.delete(3);
+
+        cll.display();
     }
 
 }
