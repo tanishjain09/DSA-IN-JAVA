@@ -1,6 +1,4 @@
-package dataStructures.LinkedList;
-
-import java.util.LinkedList;
+package dataStructures.LinkedList.CRUDoperation;
 
 public class Intro {
     public static void main(String[] args) {
@@ -32,18 +30,20 @@ public class Intro {
 //        dll.display();
 
         CircularLL cll = new CircularLL();
+//
+//        cll.insert(1);
+//        cll.insert(2);
+//        cll.insert(3);
+//        cll.insert(4);
+//        cll.insert(5);
+//
+//
+//        cll.display();
+//        cll.delete(3);
+//
+//        cll.display();
 
-        cll.insert(1);
-        cll.insert(2);
-        cll.insert(3);
-        cll.insert(4);
-        cll.insert(5);
-
-        cll.display();
-
-        cll.delete(3);
-
-        cll.display();
     }
 
 }
+
