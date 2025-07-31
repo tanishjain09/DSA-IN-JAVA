@@ -1,4 +1,4 @@
-package dataStructures.LinkedList;
+package dataStructures.LinkedList.CRUDoperation;
 
 public class CustomLL {
 
@@ -10,7 +10,7 @@ public class CustomLL {
         this.size = 0;
     }
 
-    private class Node{
+    public class Node{
         private int value;
         private Node next;
 
@@ -125,6 +125,35 @@ public class CustomLL {
         }
         System.out.println("End");
     }
+    //RECURSION reverse
+    public void reverse(Node node) {
+        if (node == tail) {
+            head = tail;
+            return;
+        }
+        reverse(node.next);
+        tail.next = node;
+        tail = node;
+        tail.next = node;
+    }
 
+    //in palace reversal
+     public void reverse(){
+        if(size < 2){
+            return;
+        }
+        Node prev = null;
+        Node present = head;
+        Node next = present.next;
 
+        while(present != null){
+            present.next = prev;
+            prev = present;
+            present = next;
+            if(next != null){
+                next = next.next;
+            }
+        }
+        head = prev;
+     }
 }

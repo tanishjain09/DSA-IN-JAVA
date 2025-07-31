@@ -1,4 +1,4 @@
-package dataStructures.LinkedList;
+package dataStructures.LinkedList.CRUDoperation;
 
 public class DoublyLL {
     private Node head;
