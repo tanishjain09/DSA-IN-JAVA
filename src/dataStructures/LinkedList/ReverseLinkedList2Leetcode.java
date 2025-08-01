@@ -1,6 +1,6 @@
 package dataStructures.LinkedList;
 
-public class LinkedList2Leetcode {
+public class ReverseLinkedList2Leetcode {
     public class ListNode {
         int val;
         ListNode next;
