@@ -55,10 +55,15 @@ public class MergeSort {
     public ListNode getMiddle(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
+        ListNode prev = null;
 
         while(fast!=null && fast.next != null){
+            prev = slow;
             fast = fast.next.next;
             slow = slow.next;
+        }
+        if(prev!=null){
+            prev.next = null;
         }
 
         return slow;
