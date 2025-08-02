@@ -16,6 +16,8 @@ public class InBuild {
         System.out.println(queue.peek());
         System.out.println(queue.remove());
 
+        queue.poll();
+
         Deque<Integer> deque = new LinkedList<>();
 
         deque.add(3);
