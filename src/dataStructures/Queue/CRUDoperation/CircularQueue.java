@@ -1,27 +1,27 @@
 package dataStructures.Queue.CRUDoperation;
 
-import java.security.spec.ECField;
-
-public class CustomQueue {
+public class CircularQueue {
     protected int[] data;
-    private static final int DEFAULT_SIZE = 5;
 
-    int end = 0;
+    private static final int DEFAULT_SIZE = 10;
+    protected int front = 0;
+    protected int end = 0;
+    protected int size = 0;
 
-    public CustomQueue() {
+    public CircularQueue() {
         this(DEFAULT_SIZE); //this here work as constructor and give value to CustomStack(int size) function
     }
 
-    public CustomQueue(int size) {
+    public CircularQueue(int size) {
         this.data = new int[size];
     }
 
     public boolean isfull(){
-        return end == data.length - 1;
+        return size == data.length;
     }
 
     public boolean isEmpty(){
-        return end == -1;
+        return size == 0;
     }
 
     public boolean insert(int item){
@@ -29,6 +29,8 @@ public class CustomQueue {
             return false;
         }
         data[end++] = item;
+        end = end % data.length;
+        size++;
         return true;
     }
 
@@ -36,13 +38,10 @@ public class CustomQueue {
         if(isEmpty()){
             throw new Exception("Queue is empty");
         }
-        int removed = data[0];
 
-        //remove the elements to left
-        for(int i = 1; i < end; i++){
-            data[i-1] = data[i];
-        }
-        end--;
+        int removed = data[front++];
+        front = front % data.length;
+        size--;
         return removed;
     }
 
@@ -50,14 +49,20 @@ public class CustomQueue {
         if(isEmpty()){
             throw new Exception("Queue is empty");
         }
-        return data[0];
+        return data[front];
     }
 
     public void display(){
-        for(int i = 0; i < end; i++){
-            System.out.print(data[i] + " <- ");
+        if(isEmpty()){
+            System.out.println("Empty");
+            return;
         }
+        int i = front;
+        do{
+            System.out.print(data[i] + " -> ");
+            i++;
+            i %= data.length;
+        }while (i != end);
         System.out.println("END");
     }
-
 }
