@@ -20,13 +20,13 @@ public class SubSetLeetcode {
 //
 //        for(int num : arr){  //for every number in array
 //            int n = outer.size();
-//            for (int i = 0; i < n; i++) {
+//            for (int i = 0; i < n; i++){
 //                List<Integer> internal = new ArrayList<>(outer.get(i));
 //                internal.add(num);
 //                outer.add(internal);
 //            }
 //        }
-//
+
 //        return outer;
 //    }
 

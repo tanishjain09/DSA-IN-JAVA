@@ -1,4 +1,4 @@
-package algorithms.speicalAlgorithm;
+package algorithms.specialAlgorithm;
 
 
 //leet code 169. Majority Element

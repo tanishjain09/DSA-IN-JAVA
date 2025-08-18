@@ -1,4 +1,4 @@
-package algorithms.speicalAlgorithm;
+package algorithms.specialAlgorithm;
 
 import java.util.ArrayList;
 import java.util.Collections;

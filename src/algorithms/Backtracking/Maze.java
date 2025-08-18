@@ -7,7 +7,7 @@ public class Maze {
 //        System.out.println(count(3,3));
 //        pathOfMaze("", 3, 3);
 //        System.out.println();
-//        System.out.println(pa thOfMazeRet("", 3, 3));
+//        System.out.println(pathOfMazeRet("", 3, 3));
 //        System.out.println(pathOfMazeDiagonal("", 3, 3));
         boolean[][] board = {
                 {true, true, true},
