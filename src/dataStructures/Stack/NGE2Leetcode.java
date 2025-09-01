@@ -3,7 +3,7 @@ package dataStructures.Stack;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class NextGreaterElementLeetcode {
+public class NGE2Leetcode {
     public static void main(String[] args) {
         int[] nums = {5,4,3,2,1};
         System.out.println(Arrays.toString(nextGreaterElements(nums)));

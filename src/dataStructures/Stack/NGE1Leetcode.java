@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Stack;
 
-public class NextGreatestElementLeetcode {
+public class NGE1Leetcode {
     public static void main(String[] args) {
         int[] num1= {4,1,2};
         int[] num2={1,3,4,2};
