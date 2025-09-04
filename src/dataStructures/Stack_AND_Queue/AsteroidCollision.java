@@ -1,8 +1,6 @@
-package dataStructures.Stack;
+package dataStructures.Stack_AND_Queue;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 
 public class AsteroidCollision {

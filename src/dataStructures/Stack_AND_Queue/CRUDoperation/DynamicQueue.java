@@ -1,4 +1,4 @@
-package dataStructures.Queue.CRUDoperation;
+package dataStructures.Stack_AND_Queue.CRUDoperation;
 
 public class DynamicQueue extends CircularQueue{
     public DynamicQueue() {

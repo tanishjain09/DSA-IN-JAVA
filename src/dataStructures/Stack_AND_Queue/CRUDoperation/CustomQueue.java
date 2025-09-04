@@ -1,6 +1,4 @@
-package dataStructures.Queue.CRUDoperation;
-
-import java.security.spec.ECField;
+package dataStructures.Stack_AND_Queue.CRUDoperation;
 
 public class CustomQueue {
     protected int[] data;

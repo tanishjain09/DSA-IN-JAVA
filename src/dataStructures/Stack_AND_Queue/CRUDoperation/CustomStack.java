@@ -1,4 +1,4 @@
-package dataStructures.Stack.CRUDoperation;
+package dataStructures.Stack_AND_Queue.CRUDoperation;
 
 public class CustomStack {
     protected int[] data;
