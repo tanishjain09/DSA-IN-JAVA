@@ -1,4 +1,4 @@
-package dataStructures.Queue.CRUDoperation;
+package dataStructures.Stack_AND_Queue.CRUDoperation;
 
 import java.util.Deque;
 import java.util.LinkedList;

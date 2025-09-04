@@ -1,4 +1,4 @@
-package dataStructures.Stack.CRUDoperation;
+package dataStructures.Stack_AND_Queue.CRUDoperation;
 
 import java.util.Stack;
 
