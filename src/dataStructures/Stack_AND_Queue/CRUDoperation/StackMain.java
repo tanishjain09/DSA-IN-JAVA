@@ -1,4 +1,4 @@
-package dataStructures.Stack.CRUDoperation;
+package dataStructures.Stack_AND_Queue.CRUDoperation;
 
 public class StackMain {
     public static void main(String[] args) throws StackException{
