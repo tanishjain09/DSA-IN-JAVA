@@ -1,4 +1,4 @@
-package dataStructures.Stack;
+package dataStructures.Stack_AND_Queue;
 
 import java.util.Stack;
 
@@ -10,7 +10,7 @@ public class RemoveKDigits {
         Stack<Character> stack = new Stack<>();
         for(int i = 0; i < num.length(); i++){
             char c = num.charAt(i);
-            while(!stack.isEmpty()&& k > 0 && stack.peek() > c){
+            while(!stack.isEmpty()&& k > 0   && stack.peek() > c){
                 stack.pop();
                 k--;
             }

@@ -1,4 +1,4 @@
-package dataStructures.Stack;
+package dataStructures.Stack_AND_Queue;
 
 public class TrappingWaterLeetcode {
     public static void main(String[] args) {
