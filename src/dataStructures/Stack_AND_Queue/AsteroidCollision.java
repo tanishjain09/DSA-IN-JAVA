@@ -12,15 +12,15 @@ public class AsteroidCollision {
         int n = arr.length;
         for(int i = 0; i < n; i++){
             if(arr[i] > 0) list.addLast(arr[i]);
-            else{
-                while(!list.isEmpty() && list.getLast() > 0 && list.getLast() < Math.abs(arr[i])){
+            else {
+                while (!list.isEmpty() && list.getLast() > 0 && list.getLast() < Math.abs(arr[i])) {
                     list.removeLast();
                 }
-            }
-            if(!list.isEmpty() && list.getLast() == Math.abs(arr[i])){
-                list.removeLast();
-            }else if(list.isEmpty() || list.getLast() < 0){
-                list.add(arr[i]);
+                if (!list.isEmpty() && list.getLast() == Math.abs(arr[i])) {
+                    list.removeLast();
+                } else if (list.isEmpty() || list.getLast() < 0) {
+                    list.add(arr[i]);
+                }
             }
         }
         int[] ans = new int[list.size()];
