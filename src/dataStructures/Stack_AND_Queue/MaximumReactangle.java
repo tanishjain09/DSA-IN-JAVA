@@ -29,10 +29,10 @@ public class MaximumReactangle {
         int maxArea = 0;
         Stack<Integer> stack = new Stack<>();
         int nse = 0, pse = 0;
-        int element =-1;
+        int element = -1;
         int n = heights.length;
-        for(int i =0;i < n; i++){
-            while(!stack.isEmpty() && heights[stack.peek()] > heights[i]){
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && heights[stack.peek()] > heights[i]) {
                 element = stack.pop();
                 nse = i;
                 pse = stack.isEmpty() ? -1 : stack.peek();
@@ -40,11 +40,12 @@ public class MaximumReactangle {
             }
             stack.push(i);
         }
-        while(!stack.isEmpty()){
+        while (!stack.isEmpty()) {
             nse = n;
             element = stack.pop();
-            pse = stack.isEmpty() ? -1: stack.peek();
+            pse = stack.isEmpty() ? -1 : stack.peek();
             maxArea = Math.max(maxArea, (nse - pse - 1) * heights[element]);
         }
         return maxArea;
+    }
 }
