@@ -2,7 +2,6 @@ package dataStructures.Stack_AND_Queue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.LinkedList;
 
 public class SlidingWindowMaxLeetcode {
     public static void main(String[] args) {
