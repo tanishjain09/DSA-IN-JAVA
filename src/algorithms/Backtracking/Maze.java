@@ -14,8 +14,8 @@ public class Maze {
                 {true, false, true},
                 {true, true, true}
         };
-
-        pathOfMazeWithRestriction("", board, 0, 0);
+        System.out.println(count(3,7));
+//        pathOfMazeWithRestriction("", board, 0, 0);
     }
 
     static int count(int r, int c){ //this will give the no of way to go in maze form 3,3 to 1,1
