@@ -1,5 +1,9 @@
 package dataStructures.Tree.BinaryTree;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 public class BinarySearchTree {
     public class Node{
         private int value;
@@ -90,5 +94,44 @@ public class BinarySearchTree {
             return true;
         }
         return Math.abs(height(node.left) - height(node.right)) <= 1 && balanced(node.left) && balanced(node.right);
+    }
+    //iterative traversal
+    public List<Integer> preOrderIterative(){
+        List<Integer> preorder = new ArrayList<>();
+
+        if(root == null) return preorder;
+        Stack<Node> st = new Stack<>();
+
+        st.push(root);
+        while (!st.isEmpty()){
+            root = st.pop();
+
+            preorder.add(root.value);
+
+            if(root.right != null) st.push(root.right);
+            if(root.left != null) st.push(root.left);
+        }
+        return preorder;
+    }
+    public List<Integer> inorderIterative(){
+        List<Integer> result = new ArrayList<>();
+        Stack<Node> stack = new Stack<>();
+        Node current = root;
+
+        while (current != null || !stack.isEmpty()) {
+            // Reach the leftmost Node
+            while (current != null) {
+                stack.push(current);
+                current = current.left;
+            }
+            // Current must be null here
+            current = stack.pop();
+            result.add(current.value);  // Visit node
+
+            // Move to the right subtree
+            current = current.right;
+        }
+
+        return result;
     }
 }
