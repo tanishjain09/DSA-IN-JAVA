@@ -1,13 +1,14 @@
 package dataStructures.Tree.Questions;
-class Node{
-    int val;
-    Node left;
-    Node right;
-    public Node(int val){
-        this.val = val;
-    }
-}
+
 public class TwoNodeSwapped {
+    class Node{
+        int val;
+        Node left;
+        Node right;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     Node first;
     Node second;
     Node prev;

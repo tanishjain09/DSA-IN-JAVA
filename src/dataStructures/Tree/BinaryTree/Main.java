@@ -19,15 +19,18 @@ public class Main {
         int[] sortedArr = {1,2,3,4};
         BinarySearchTree bst1 = new BinarySearchTree();
         bst1.populateSortedArray(sortedArr);
-//        bst1.display();
+        bst1.display();
 
+        System.out.println("preorer"+bst1.preOrderIterative());
+        System.out.println("inorder"+ bst1.inorderIterative());
         AVL tree = new AVL();
 
         for(int i=0; i < 1000; i++) {
             tree.insert(i);
         }
 
-        System.out.println(tree.height());
+//        System.out.println(tree.height());
+
     }
 }
 
