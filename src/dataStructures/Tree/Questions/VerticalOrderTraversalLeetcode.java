@@ -5,8 +5,8 @@ import java.util.*;
 public class VerticalOrderTraversalLeetcode {
     static class TreeNode{
         int data;
-        Node left;
-        Node right;
+        TreeNode left;
+        TreeNode right;
         TreeNode(int data){
             this.data = data;
             left=null;
