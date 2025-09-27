@@ -1,6 +1,6 @@
 package algorithms.DynamicProgramming;
 
-public class HouseRobber2 {
+public class HouseRobber2DP6 {
     public static void main(String[] args) {
         int[] nums = {2,3,2};
         System.out.println(rob(nums));

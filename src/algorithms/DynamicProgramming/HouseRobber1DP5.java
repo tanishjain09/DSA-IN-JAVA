@@ -1,9 +1,8 @@
 package algorithms.DynamicProgramming;
 
 import java.util.Arrays;
-import java.util.Map;
 
-public class HouseRobber1 {
+public class HouseRobber1DP5 {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 1};
         System.out.println(rob(nums));
